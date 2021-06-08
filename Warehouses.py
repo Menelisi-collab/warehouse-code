@@ -1,11 +1,11 @@
 # Set variables
-guest = "Senior_Manager"
+
 Access_Code = False
-Warehouse_1 = 250 "Sedans"
-Warehouse_2 = 184 "Trucks"
-Warehouse_3 = 1239 "Vehicles,Quad Bikes, Bakkies"
-Warehouse_4 = 3127 "Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks "
-Warehouse_5 = 10423 "Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks"
+Warehouse_1 = "250 Sedans"
+Warehouse_2 = "184 Trucks"
+Warehouse_3 = "1239 Vehicles,Quad Bikes, Bakkies"
+Warehouse_4 = "3127 Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks "
+Warehouse_5 = "10423 Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks"
 
 # Create Main Warehouse Class
 class Plant:
@@ -56,33 +56,33 @@ class Plant:
 
 # Create Warehouse functions
     def Warehouse_1(self):
-        if Sedans == 250:
+        if "Sedans" == 250:
             return True
         else:
             return False
 
     def Warehouse_2(self):
-        if Trucks == 184:
+        if "Trucks" == 184:
             return True
         else:
             return False
 
     def Warehouse_3(self):
-        if Vehicles,Quad Bikes, Bakkies == 1239:
+        if "Vehicles,Quad Bikes, Bakkies" == 1239:
             return True
         else:
             return False
 
 
     def Warehouse_4(self):
-        if Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks == 3127:
+        if "Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks" == 3127:
             return True
         else:
             return False
 
 
     def Warehouse_5(self):
-        if Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks == 10423:
+        if "Sedans, Vehicles, Quad_Bikes, Bakkies, Trucks" == 10423:
             return True
         else:
             return False
@@ -90,7 +90,6 @@ class Plant:
 # Warehouse Repairs
 
 faults = int(input("Enter the number of faults: "))
-faults_couter += 1
 
     def Repairs(Warehouse_1):
         if faults == 0:
